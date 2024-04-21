@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7C53922BD5A70700CBD728 /* PlaceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C53912BD5A70700CBD728 /* PlaceVM.swift */; };
+		4C7C53942BD5ABEC00CBD728 /* PlacesListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C53932BD5ABEC00CBD728 /* PlacesListVM.swift */; };
 		4CD62D0A2BCE244800FA0DE8 /* RomalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD62D092BCE244800FA0DE8 /* RomalogApp.swift */; };
 		4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD62D0B2BCE244800FA0DE8 /* ContentView.swift */; };
 		4CD62D0E2BCE244A00FA0DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD62D0D2BCE244A00FA0DE8 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C7C53912BD5A70700CBD728 /* PlaceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVM.swift; sourceTree = "<group>"; };
+		4C7C53932BD5ABEC00CBD728 /* PlacesListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListVM.swift; sourceTree = "<group>"; };
 		4CD62D062BCE244800FA0DE8 /* Romalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Romalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD62D092BCE244800FA0DE8 /* RomalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomalogApp.swift; sourceTree = "<group>"; };
 		4CD62D0B2BCE244800FA0DE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C7C538E2BD5A64E00CBD728 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C7C538F2BD5A65F00CBD728 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C53912BD5A70700CBD728 /* PlaceVM.swift */,
+				4C7C53932BD5ABEC00CBD728 /* PlacesListVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C7C53902BD5A67100CBD728 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4CD62CFD2BCE244800FA0DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +78,9 @@
 		4CD62D082BCE244800FA0DE8 /* Romalog */ = {
 			isa = PBXGroup;
 			children = (
+				4C7C53902BD5A67100CBD728 /* Utilities */,
+				4C7C538F2BD5A65F00CBD728 /* ViewModels */,
+				4C7C538E2BD5A64E00CBD728 /* Views */,
 				4CD62D092BCE244800FA0DE8 /* RomalogApp.swift */,
 				4CD62D0B2BCE244800FA0DE8 /* ContentView.swift */,
 				4CD62D0D2BCE244A00FA0DE8 /* Assets.xcassets */,
@@ -137,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7C53942BD5ABEC00CBD728 /* PlacesListVM.swift in Sources */,
+				4C7C53922BD5A70700CBD728 /* PlaceVM.swift in Sources */,
 				4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */,
 				4CD62D0A2BCE244800FA0DE8 /* RomalogApp.swift in Sources */,
 			);
