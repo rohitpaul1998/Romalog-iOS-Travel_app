@@ -14,6 +14,7 @@
 		4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD62D0B2BCE244800FA0DE8 /* ContentView.swift */; };
 		4CD62D0E2BCE244A00FA0DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD62D0D2BCE244A00FA0DE8 /* Assets.xcassets */; };
 		4CD62D112BCE244A00FA0DE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD62D102BCE244A00FA0DE8 /* Preview Assets.xcassets */; };
+		4CDF417B2BD7308E00B02AF5 /* AddNewPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4CD62D0B2BCE244800FA0DE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CD62D0D2BCE244A00FA0DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD62D102BCE244A00FA0DE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		4C7C538E2BD5A64E00CBD728 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C7C53942BD5ABEC00CBD728 /* PlacesListVM.swift in Sources */,
+				4CDF417B2BD7308E00B02AF5 /* AddNewPlaceView.swift in Sources */,
 				4C7C53922BD5A70700CBD728 /* PlaceVM.swift in Sources */,
 				4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */,
 				4C3A71E02BD70B2000B2B7FC /* AddPlaceVM.swift in Sources */,
