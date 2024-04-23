@@ -18,7 +18,7 @@ class PlacesListVM: ObservableObject {
     }
     
     func fetchPlaces() {
-        places = PlaceVM.sampleData
+//        places = PlaceVM.sampleData
         
         // coredata manager
         
