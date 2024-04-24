@@ -10,6 +10,10 @@
 		4C3A71E02BD70B2000B2B7FC /* AddPlaceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A71DF2BD70B2000B2B7FC /* AddPlaceVM.swift */; };
 		4C7C53922BD5A70700CBD728 /* PlaceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C53912BD5A70700CBD728 /* PlaceVM.swift */; };
 		4C7C53942BD5ABEC00CBD728 /* PlacesListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C53932BD5ABEC00CBD728 /* PlacesListVM.swift */; };
+		4C9437BB2BD86EDD0091B188 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9437BA2BD86EDD0091B188 /* LazyView.swift */; };
+		4C9437BD2BD871290091B188 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9437BC2BD871290091B188 /* LocationManager.swift */; };
+		4C9437C02BD8D5AE0091B188 /* RomalogDM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C9437BE2BD8D5AE0091B188 /* RomalogDM.xcdatamodeld */; };
+		4C9437C22BD8D6D60091B188 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9437C12BD8D6D60091B188 /* CoreDataManager.swift */; };
 		4CC027582BD753B700FBA13C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC027572BD753B700FBA13C /* HomeView.swift */; };
 		4CD62D0A2BCE244800FA0DE8 /* RomalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD62D092BCE244800FA0DE8 /* RomalogApp.swift */; };
 		4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD62D0B2BCE244800FA0DE8 /* ContentView.swift */; };
@@ -22,6 +26,10 @@
 		4C3A71DF2BD70B2000B2B7FC /* AddPlaceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVM.swift; sourceTree = "<group>"; };
 		4C7C53912BD5A70700CBD728 /* PlaceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVM.swift; sourceTree = "<group>"; };
 		4C7C53932BD5ABEC00CBD728 /* PlacesListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListVM.swift; sourceTree = "<group>"; };
+		4C9437BA2BD86EDD0091B188 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		4C9437BC2BD871290091B188 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4C9437BF2BD8D5AE0091B188 /* RomalogDM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RomalogDM.xcdatamodel; sourceTree = "<group>"; };
+		4C9437C12BD8D6D60091B188 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4CC027572BD753B700FBA13C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4CD62D062BCE244800FA0DE8 /* Romalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Romalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD62D092BCE244800FA0DE8 /* RomalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomalogApp.swift; sourceTree = "<group>"; };
@@ -47,6 +55,7 @@
 			children = (
 				4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */,
 				4CC027572BD753B700FBA13C /* HomeView.swift */,
+				4C9437BA2BD86EDD0091B188 /* LazyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -64,6 +73,9 @@
 		4C7C53902BD5A67100CBD728 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4C9437BC2BD871290091B188 /* LocationManager.swift */,
+				4C9437BE2BD8D5AE0091B188 /* RomalogDM.xcdatamodeld */,
+				4C9437C12BD8D6D60091B188 /* CoreDataManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -180,9 +192,13 @@
 				4CC027582BD753B700FBA13C /* HomeView.swift in Sources */,
 				4CDF417B2BD7308E00B02AF5 /* AddNewPlaceView.swift in Sources */,
 				4C7C53922BD5A70700CBD728 /* PlaceVM.swift in Sources */,
+				4C9437BB2BD86EDD0091B188 /* LazyView.swift in Sources */,
 				4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */,
 				4C3A71E02BD70B2000B2B7FC /* AddPlaceVM.swift in Sources */,
 				4CD62D0A2BCE244800FA0DE8 /* RomalogApp.swift in Sources */,
+				4C9437C02BD8D5AE0091B188 /* RomalogDM.xcdatamodeld in Sources */,
+				4C9437BD2BD871290091B188 /* LocationManager.swift in Sources */,
+				4C9437C22BD8D6D60091B188 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +404,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C9437BE2BD8D5AE0091B188 /* RomalogDM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C9437BF2BD8D5AE0091B188 /* RomalogDM.xcdatamodel */,
+			);
+			currentVersion = 4C9437BF2BD8D5AE0091B188 /* RomalogDM.xcdatamodel */;
+			path = RomalogDM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4CD62CFE2BCE244800FA0DE8 /* Project object */;
 }
