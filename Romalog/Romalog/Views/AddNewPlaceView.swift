@@ -12,6 +12,8 @@ struct AddNewPlaceView: View {
     
     @StateObject var viewModel = AddPlaceVM()
     
+    @State private var showImagePicker = false
+    
     var body: some View {
         ZStack {
             VStack {
@@ -41,16 +43,30 @@ struct AddNewPlaceView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
                 
-                Button("Get Image") {
-                    Task {
-                        await viewModel.getImageFor(placeName:viewModel.name)
+                HStack { 
+                    Button("Get Image") {
+                        Task {
+                            await viewModel.getImageFor(placeName:viewModel.name)
+                        }
+                    }
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .disabled(viewModel.name.isEmpty)
+                    
+                    Spacer()
+                    
+                    Button ("Browse Image") {
+                        showImagePicker.toggle()
+                    }
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .disabled(viewModel.name.isEmpty)
+                    .sheet(isPresented: $showImagePicker) {
+                        ImagePicker(image:$viewModel.image)
                     }
                 }
-                .buttonStyle(.bordered)
-                .buttonBorderShape(.capsule)
-                .disabled(viewModel.name.isEmpty)
+                .padding()
                 
-                Spacer()
                 HStack {
                     Button(action: {
                         savePlace()

@@ -29,6 +29,10 @@ class AddPlaceVM: ObservableObject {
         }
     }
     
+    func savePlaceWithImageFromGallery(name: String, city: String, country: String, notes: String, imageData: Data) {
+        CoreDataManager.shared.save(name: name, notes: notes, city: city, country: country, imageData: imageData)
+    }
+    
     func getImageFor(placeName: String) async {
         let encodedName = placeName.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
         let url = URL(string: "https://source.unsplash.com//1080x1350/?\(encodedName)")!
