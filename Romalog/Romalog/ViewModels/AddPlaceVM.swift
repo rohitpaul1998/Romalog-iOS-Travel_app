@@ -22,8 +22,11 @@ class AddPlaceVM: ObservableObject {
     @Published var image: Image?
     @Published var imageData: Data?
     
-    func savePlace() {
+    func savePlace() async {
         // coredata manager save place logic
+        if let data = imageData {
+            CoreDataManager.shared.save(name: name, notes: notes, city: city, country: country, imageData: data)
+        }
     }
     
     func getImageFor(placeName: String) async {

@@ -81,8 +81,13 @@ struct AddNewPlaceView: View {
     }
     
     private func savePlace() {
-        // all the logic for saving the place
-        dismiss()
+        viewModel.showProgress.toggle()
+        Task {
+            await viewModel.savePlace()
+            DispatchQueue.main.async {
+                dismiss()
+            }
+        }
     }
 }
 
