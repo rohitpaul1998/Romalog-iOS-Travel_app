@@ -20,6 +20,7 @@
 		4CD62D0E2BCE244A00FA0DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD62D0D2BCE244A00FA0DE8 /* Assets.xcassets */; };
 		4CD62D112BCE244A00FA0DE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD62D102BCE244A00FA0DE8 /* Preview Assets.xcassets */; };
 		4CDF417B2BD7308E00B02AF5 /* AddNewPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */; };
+		4CED4B112BDC12E8008D1243 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CED4B102BDC12E8008D1243 /* PlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4CD62D0D2BCE244A00FA0DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD62D102BCE244A00FA0DE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaceView.swift; sourceTree = "<group>"; };
+		4CED4B102BDC12E8008D1243 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				4CDF417A2BD7308E00B02AF5 /* AddNewPlaceView.swift */,
 				4CC027572BD753B700FBA13C /* HomeView.swift */,
 				4C9437BA2BD86EDD0091B188 /* LazyView.swift */,
+				4CED4B102BDC12E8008D1243 /* PlaceDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				4C9437BB2BD86EDD0091B188 /* LazyView.swift in Sources */,
 				4CD62D0C2BCE244800FA0DE8 /* ContentView.swift in Sources */,
 				4C3A71E02BD70B2000B2B7FC /* AddPlaceVM.swift in Sources */,
+				4CED4B112BDC12E8008D1243 /* PlaceDetailView.swift in Sources */,
 				4CD62D0A2BCE244800FA0DE8 /* RomalogApp.swift in Sources */,
 				4C9437C02BD8D5AE0091B188 /* RomalogDM.xcdatamodeld in Sources */,
 				4C9437BD2BD871290091B188 /* LocationManager.swift in Sources */,
