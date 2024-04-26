@@ -30,8 +30,8 @@ extension PlaceVM {
     static var sampleData: [PlaceVM] {
         [
             .init(id: UUID(), name: "Colosseum", city: "Rome", country: "Italy", notes: "Had the privilege to visit colosseum in Rome. One of the must visit places. Will never forget this moment with the fam xx", placeImage: Image("Rome")),
-            .init(id: UUID(), name: "Holy Sepulchre", city: "Old Jerusalem", country: "Israel", notes: "What a moment to live in! I alwasy dreamt of taking my parents and family to Jerusalem where our Lord and savior was born!!", placeImage: Image("Holy_sepulchre_jerusalem")),
-            .init(id: UUID(), name: "Sydney Opera House", city: "New South Wales", country: "Australia", notes: "If you like monumental places, I'd recommend to visit Australia, 'specially Sydney's Opera House in New South Wales, Australia!", placeImage: Image("Australia"))
+            .init(id: UUID(), name: "Holy Sepulchre Church", city: "Jerusalem", country: "Israel", notes: "What a moment to live in! I always dreamt of taking my parents and family to Jerusalem where our Lord and savior was born!!", placeImage: Image("Holy_sepulchre_jerusalem")),
+            .init(id: UUID(), name: "Sydney Opera House", city: "Sydney", country: "Australia", notes: "If you like monumental places, I'd recommend to visit Australia, 'specially Sydney's Opera House in New South Wales, Australia!", placeImage: Image("Australia"))
         ]
     }
 }
